@@ -1,0 +1,7 @@
+pypdf
+textacy
+elasticsearch[async]
+httpx
+python-dotenv
+fastapi
+uvicorn

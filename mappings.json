@@ -1,0 +1,52 @@
+{
+    "mappings": {
+      "properties": {
+        "unique_id": {
+          "type": "keyword"
+        },
+        "resume_data": {
+          "type": "text"
+        },
+        "entities": {
+          "type": "text"
+        },
+        "extracted_keywords": {
+          "type": "text"
+        },
+        "keyterms": {
+          "type": "text"
+        },
+        "name": {
+          "type": "text"
+        },
+        "experience": {
+          "type": "text"
+        },
+        "emails": {
+          "type": "text"
+        },
+        "phones": {
+          "type": "text"
+        },
+        "years": {
+          "type": "text"
+        },
+        "segments": {
+          "type": "nested",
+          "properties": {
+            "section_name": {
+              "type": "keyword"
+            },
+            "content": {
+              "type": "text"
+            },
+            "embedding": {
+              "type": "dense_vector",
+              "index": true,
+              "dims": 512
+            }
+          }
+        }
+      }
+    }
+  }
